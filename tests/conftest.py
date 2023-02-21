@@ -14,8 +14,9 @@ from resources.LoginData import LoginData
 #    driver.maximize_window()
 #    return driver
 
-#@pytest.fixture(autouse=True, scope="function")
+@pytest.fixture(autouse=True, scope="function")
 def browser(request):
+    global driver
     if LoginData.browser == "Chrome":
         chrome_options = webdriver.ChromeOptions()
         chrome_options.headless = LoginData.HEADLESS_BROWSER

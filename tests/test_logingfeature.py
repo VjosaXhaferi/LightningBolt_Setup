@@ -1,7 +1,8 @@
 from pageObjects.LoginPage import LogIn
+from resources.LoginData import LoginData
 
 
-class testlogingfeature:
+class TestLogingfeature:
     def test_LogInFeature(self):
-        self.loginpage = LogIn(self.driver)
-        self.loginpage.LogInFeature()
+        self.login = LogIn(self.driver)
+        self.login.LogInFeature(LoginData.username, LoginData.password)
