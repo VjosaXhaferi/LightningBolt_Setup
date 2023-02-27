@@ -14,7 +14,7 @@ from resources.LoginData import LoginData
 #    driver.maximize_window()
 #    return driver
 
-@pytest.fixture(autouse=True, scope="function")
+@pytest.fixture(autouse=True)
 def browser(request):
     global driver
     if LoginData.browser == "Chrome":
@@ -28,8 +28,8 @@ def browser(request):
 
     driver.delete_all_cookies()
     driver.maximize_window()
-    driver.set_page_load_timeout(10)
+    driver.set_page_load_timeout(15)
     driver.get(LoginData.url)
     request.cls.driver = driver
-    yield
-    driver.quit()
+    #yield
+    #driver.quit()
