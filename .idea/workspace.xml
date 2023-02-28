@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="adce2966-d9d8-40e0-a4d5-c9a09735feb7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_AddDepartment.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_AddDepartment.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,8 +152,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.Python tests for test_AddDepartment.TestLogingfeature" />
-        <item itemvalue="Python tests.Python tests for test_AddDepartment.TestLogingfeature.test_LogInFeature" />
         <item itemvalue="Python tests.Python tests in test_AddDepartment.py" />
+        <item itemvalue="Python tests.Python tests for test_AddDepartment.TestLogingfeature.test_LogInFeature" />
         <item itemvalue="Python tests.Python tests for test_AddDepartment.TestAddDepartment" />
         <item itemvalue="Python.LoginPage" />
       </list>
