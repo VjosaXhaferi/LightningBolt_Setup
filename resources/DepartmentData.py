@@ -1,5 +1,6 @@
 import random
 
+
 class Department:
     randInt = random.randint(0, 100)  # this will generate a random num from 0-100, adding it to dep. and tem.
 
