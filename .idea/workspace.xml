@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="adce2966-d9d8-40e0-a4d5-c9a09735feb7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/sharedActions/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utilities/logs/mylog.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pageObjects/AddDepartment.py" beforeDir="false" afterPath="$PROJECT_DIR$/pageObjects/DepartmentPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pageObjects/AddPersonnel.py" beforeDir="false" afterPath="$PROJECT_DIR$/pageObjects/PersonnelPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/Department.py" beforeDir="false" afterPath="$PROJECT_DIR$/resources/DepartmentData.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/Personnel.py" beforeDir="false" afterPath="$PROJECT_DIR$/resources/PersonnelData.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_AddDepartment.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_AddDepartment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_AddPersonnel.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_AddPersonnel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pageObjects/DepartmentPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pageObjects/DepartmentPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pageObjects/PersonnelPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pageObjects/PersonnelPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/DepartmentData.py" beforeDir="false" afterPath="$PROJECT_DIR$/resources/DepartmentData.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/PersonnelData.py" beforeDir="false" afterPath="$PROJECT_DIR$/resources/PersonnelData.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +51,70 @@
       <recent name="$PROJECT_DIR$/tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_AddDepartment.TestAddDepartment">
+  <component name="RunManager" selected="Python tests.Python tests for test_AddPersonnel.TestAddPersonnel">
+    <configuration name="CustomLogger" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LightningBolt_Setup" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utilities" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utilities/CustomLogger.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="DepartmentPage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LightningBolt_Setup" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pageObjects" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pageObjects/DepartmentPage.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="PersonnelPage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LightningBolt_Setup" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pageObjects" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pageObjects/PersonnelPage.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="LightningBolt_Setup" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -88,48 +150,6 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_AddDepartment.TestAddDepartment.test_LogInFeature" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="LightningBolt_Setup" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_AddDepartment.TestAddDepartment.test_LogInFeature&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_AddPersonnel.TestAddDepartment" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="LightningBolt_Setup" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_AddPersonnel.TestAddDepartment&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_AddPersonnel.TestAddDepartment.test_LogInFeature" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="LightningBolt_Setup" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_AddPersonnel.TestAddDepartment.test_LogInFeature&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="Python tests for test_AddPersonnel.TestAddPersonnel" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="LightningBolt_Setup" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -146,19 +166,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.main" />
-      <item itemvalue="Python tests.Python tests for test_AddDepartment.TestAddDepartment.test_LogInFeature" />
-      <item itemvalue="Python tests.Python tests for test_AddPersonnel.TestAddDepartment" />
-      <item itemvalue="Python tests.Python tests for test_AddPersonnel.TestAddDepartment.test_LogInFeature" />
-      <item itemvalue="Python tests.Python tests for test_AddPersonnel.TestAddPersonnel" />
+      <item itemvalue="Python.PersonnelPage" />
+      <item itemvalue="Python.CustomLogger" />
+      <item itemvalue="Python.DepartmentPage" />
       <item itemvalue="Python tests.Python tests for test_AddDepartment.TestAddDepartment" />
+      <item itemvalue="Python tests.Python tests for test_AddPersonnel.TestAddPersonnel" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_AddDepartment.TestAddDepartment" />
-        <item itemvalue="Python tests.Python tests for test_AddDepartment.TestAddDepartment.test_LogInFeature" />
         <item itemvalue="Python tests.Python tests for test_AddPersonnel.TestAddPersonnel" />
-        <item itemvalue="Python tests.Python tests for test_AddPersonnel.TestAddDepartment" />
-        <item itemvalue="Python tests.Python tests for test_AddPersonnel.TestAddDepartment.test_LogInFeature" />
+        <item itemvalue="Python tests.Python tests for test_AddDepartment.TestAddDepartment" />
+        <item itemvalue="Python.PersonnelPage" />
+        <item itemvalue="Python.CustomLogger" />
+        <item itemvalue="Python.DepartmentPage" />
       </list>
     </recent_temporary>
   </component>

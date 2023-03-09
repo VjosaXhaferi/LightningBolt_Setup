@@ -28,7 +28,7 @@ def browser(request):
 
     driver.delete_all_cookies()
     driver.maximize_window()
-    driver.set_page_load_timeout(15)
+    driver.set_page_load_timeout(20)
     driver.get(LoginData.url)
     request.cls.driver = driver
     #yield

@@ -1,10 +1,11 @@
-import time
 from selenium.webdriver.common.by import By
 from resources.DepartmentData import Department
 from sharedActions.SharedActions import MainPage
+from utilities.CustomLogger import CustomLogger
 
 
 class NewDepartment(MainPage):
+
     def __int__(self, driver):
         super().__init__(driver)
 
@@ -16,7 +17,10 @@ class NewDepartment(MainPage):
     ADD_TEMPLATE = (By.ID, "add_button")
     SAVE_BUTTON = (By.XPATH, "//input[@class='orange-button right save_changes']")
 
+    log = CustomLogger.customLogger()
+
     def AddNewDepartment(self):
+
         self.click_element(self.DEPARTMENTS_TAB)
         assert self.driver.current_url == Department.url
 
@@ -35,6 +39,7 @@ class NewDepartment(MainPage):
         for tr in table.find_elements(By.TAG_NAME, 'tr'):
             if new_department in tr.text:
                 row = tr
+                self.log.info("Department has been found!")
                 break
 
         # Assert that the item was added to the table

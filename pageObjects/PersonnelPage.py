@@ -1,6 +1,7 @@
 from selenium.webdriver.common.by import By
 from resources.PersonnelData import Personnel
 from sharedActions.SharedActions import MainPage
+from utilities.CustomLogger import CustomLogger
 
 
 class NewPersonnel(MainPage):
@@ -12,8 +13,10 @@ class NewPersonnel(MainPage):
     FIRST_NAME = (By.ID, "personnel_First_Name")
     LAST_NAME = (By.ID, "personnel_Last_Name")
     DISPLAY_NAME = (By.ID, "personnel_Display_Name")
-    COMPACT_NAME = (By.ID, "personnel_Display_Name")
+    COMPACT_NAME = (By.ID, "personnel_Compact_Name")
     SAVE_BUTTON = (By.XPATH, "//input[@class='orange-button right save_changes']")
+
+    log = CustomLogger.customLogger()
 
     def AddNewPersonnel(self):
         self.click_element(self.PERSONNEL_TAB)
@@ -34,6 +37,7 @@ class NewPersonnel(MainPage):
         for tr in table.find_elements(By.TAG_NAME, 'tr'):
             if displayName in tr.text:
                 row = tr
+                self.log.info("Personnel has been found!")
                 break
 
         # Assert that the item was added to the table
