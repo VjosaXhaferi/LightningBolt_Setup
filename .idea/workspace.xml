@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="adce2966-d9d8-40e0-a4d5-c9a09735feb7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/test_InvalidCredentials.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pageObjects/DepartmentPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pageObjects/DepartmentPage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pageObjects/LoginPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pageObjects/LoginPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/LoginData.py" beforeDir="false" afterPath="$PROJECT_DIR$/resources/LoginData.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pageObjects/PersonnelPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pageObjects/PersonnelPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/logs/mylog.log" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/logs/mylog.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +49,7 @@
       <recent name="$PROJECT_DIR$/tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_InvalidCredentials.TestInvalidCredentials">
+  <component name="RunManager" selected="Python tests.Python tests for test_AddPersonnel.TestAddPersonnel">
     <configuration name="PersonnelPage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LightningBolt_Setup" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -157,9 +158,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_AddPersonnel.TestAddPersonnel" />
         <item itemvalue="Python tests.Python tests for test_InvalidCredentials.TestInvalidCredentials" />
         <item itemvalue="Python tests.Python tests for test_InvalidCredentials.TestAddPersonnel" />
-        <item itemvalue="Python tests.Python tests for test_AddPersonnel.TestAddPersonnel" />
         <item itemvalue="Python tests.Python tests for test_AddDepartment.TestAddDepartment" />
         <item itemvalue="Python.PersonnelPage" />
       </list>

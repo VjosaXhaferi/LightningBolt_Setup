@@ -43,4 +43,8 @@ class NewDepartment(MainPage):
                 break
 
         # Assert that the item was added to the table
-        assert row is not None, f"Item '{new_department}' not found in table"
+        try:
+            assert row is not None
+        except AssertionError as err:
+            self.log.exception(f"'{new_department}' was not added!")
+            raise err

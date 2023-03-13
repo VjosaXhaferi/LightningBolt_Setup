@@ -31,6 +31,7 @@ class NewPersonnel(MainPage):
         self.send_keys(self.COMPACT_NAME, Personnel.CompactName)
         self.click_element(self.SAVE_BUTTON)
 
+
         table = self.driver.find_element(By.ID, "personnel_grid")
 
         row = None
@@ -40,5 +41,8 @@ class NewPersonnel(MainPage):
                 self.log.info("Personnel has been found!")
                 break
 
-        # Assert that the item was added to the table
-        assert row is not None, f"Item '{displayName}' not found in table"
+        try:
+            assert row is not None
+        except AssertionError as err:
+            self.log.exception(f"Item '{displayName}' not found in table")
+            raise err

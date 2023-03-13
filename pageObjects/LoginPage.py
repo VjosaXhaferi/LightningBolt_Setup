@@ -1,10 +1,13 @@
 from selenium.webdriver.common.by import By
 from resources.LoginData import LoginData, InvalidPassword, InvalidUsername, InvalidUsernameNPassword
+from utilities.CustomLogger import CustomLogger
 
 
 class LogIn:
     def __init__(self, driver):
         self.driver = driver
+
+    log = CustomLogger.customLogger()
 
     def LogInFeature(self):
         assert self.driver.current_url == LoginData.url
