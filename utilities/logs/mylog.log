@@ -15,3 +15,12 @@ Traceback (most recent call last):
   File "/Users/vjosaxhaferi/PycharmProjects/LightningBolt_Setup/pageObjects/PersonnelPage.py", line 35, in AddNewPersonnel
     assert self.driver.current_url == "test"
 AssertionError
+2023-03-14 20:12:58,978 - INFO - NewDepartment : Department has been found!
+2023-03-14 20:20:06,494 - INFO - NewDepartment : Department has been found!
+2023-03-14 20:20:40,677 - INFO - NewPersonnel : Personnel has been found!
+2023-03-14 20:32:33,326 - INFO - NewDepartment : Department has been found!
+2023-03-14 20:33:15,248 - INFO - NewPersonnel : Personnel has been found!
+2023-03-14 20:37:52,285 - INFO - NewDepartment : Department has been found!
+2023-03-14 20:41:29,836 - INFO - NewDepartment : Department has been found!
+2023-03-15 13:53:58,828 - INFO - NewDepartment : Department has been found!
+2023-03-15 14:04:13,120 - INFO - NewDepartment : Department has been found!
