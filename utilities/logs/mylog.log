@@ -24,3 +24,63 @@ AssertionError
 2023-03-14 20:41:29,836 - INFO - NewDepartment : Department has been found!
 2023-03-15 13:53:58,828 - INFO - NewDepartment : Department has been found!
 2023-03-15 14:04:13,120 - INFO - NewDepartment : Department has been found!
+2023-03-16 10:40:59,187 - INFO - NewDepartment : Department has been found!
+2023-03-16 15:58:27,550 - INFO - NewDepartment : Department has been found!
+2023-03-16 20:59:14,426 - INFO - NewDepartment : Department has been found!
+2023-03-16 21:04:02,954 - INFO - NewDepartment : Department has been found!
+2023-03-16 21:11:17,796 - INFO - NewDepartment : Department has been found!
+2023-03-16 21:20:39,751 - INFO - NewDepartment : Department has been found!
+2023-03-16 21:32:31,794 - INFO - NewPersonnel : Personnel has been found!
+2023-03-16 21:53:35,579 - INFO - NewPersonnel : Personnel has been found!
+2023-03-16 21:53:35,582 - ERROR - NewPersonnel : Item 'gocee' not found in table
+Traceback (most recent call last):
+  File "/Users/vjosaxhaferi/PycharmProjects/LightningBolt_Setup/pageObjects/PersonnelPage.py", line 44, in AddNewPersonnel
+    assert row is None
+AssertionError
+2023-03-16 21:57:48,671 - INFO - NewDepartment : Department has been found!
+2023-03-16 21:57:48,673 - ERROR - NewDepartment : 'Ritech Department 747' was not added!
+Traceback (most recent call last):
+  File "/Users/vjosaxhaferi/PycharmProjects/LightningBolt_Setup/pageObjects/DepartmentPage.py", line 47, in AddNewDepartment
+    assert row is None
+AssertionError
+2023-03-16 21:59:08,719 - INFO - NewDepartment : Department has been found!
+2023-03-16 22:00:56,874 - INFO - NewDepartment : Department has been found!
+2023-03-16 22:00:56,878 - ERROR - NewDepartment : 'Ritech Department 753' was not added!
+Traceback (most recent call last):
+  File "/Users/vjosaxhaferi/PycharmProjects/LightningBolt_Setup/pageObjects/DepartmentPage.py", line 48, in AddNewDepartment
+    assert row is None
+AssertionError
+2023-03-16 22:03:18,485 - INFO - NewDepartment : Department has been found!
+2023-03-16 22:08:53,788 - INFO - NewDepartment : Department has been found!
+2023-03-16 22:12:18,423 - INFO - NewDepartment : Department has been found!
+2023-03-16 22:12:18,428 - ERROR - NewDepartment : 'Ritech Department 589' was not added!
+Traceback (most recent call last):
+  File "/Users/vjosaxhaferi/PycharmProjects/LightningBolt_Setup/pageObjects/DepartmentPage.py", line 48, in AddNewDepartment
+    assert row is None
+AssertionError
+2023-03-16 22:14:55,868 - ERROR - NewDepartment : 'Ritech Department 998' was not added!
+Traceback (most recent call last):
+  File "/Users/vjosaxhaferi/PycharmProjects/LightningBolt_Setup/pageObjects/DepartmentPage.py", line 47, in AddNewDepartment
+    assert row is None
+AssertionError
+2023-03-16 22:28:24,409 - INFO - NewDepartment : Department has been found!
+2023-03-16 23:01:31,357 - INFO - NewDepartment : Department 'Ritech Department 497' has been found!
+2023-03-16 23:06:40,972 - INFO - NewDepartment : Department 'Ritech Department 212' has been found!
+2023-03-16 23:07:56,023 - INFO - NewDepartment : Department 'Ritech Department 63' has been found!
+2023-03-16 23:15:09,003 - ERROR - NewPersonnel : Personnel 'jzhig' was not found!
+Traceback (most recent call last):
+  File "/Users/vjosaxhaferi/PycharmProjects/LightningBolt_Setup/pageObjects/PersonnelPage.py", line 37, in AddNewPersonnel
+    assert row is not None
+AssertionError
+2023-03-16 23:17:14,408 - INFO - NewPersonnel : Personnel 'jsxpj' has been found!
+2023-03-16 23:20:47,656 - INFO - NewPersonnel : Personnel 'irrdr' has been found!
+2023-03-16 23:22:38,514 - ERROR - NewPersonnel : Personnel 'exstq' was not found!
+Traceback (most recent call last):
+  File "/Users/vjosaxhaferi/PycharmProjects/LightningBolt_Setup/pageObjects/PersonnelPage.py", line 37, in AddNewPersonnel
+    assert row is not None
+AssertionError
+2023-03-17 13:47:32,541 - INFO - NewDepartment : Department 'Ritech Department 369' has been found!
+2023-03-17 13:48:08,976 - INFO - NewPersonnel : Personnel 'suxzs' has been found!
+2023-03-18 11:37:15,768 - INFO - NewDepartment : Department 'Ritech Department 255' has been found!
+2023-03-18 11:38:15,150 - INFO - NewDepartment : Department 'Ritech Department 855' has been found!
+2023-03-18 12:06:04,115 - INFO - NewDepartment : Department 'Ritech Department 668' has been found!

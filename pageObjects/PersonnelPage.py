@@ -1,3 +1,4 @@
+import pytest
 from selenium.webdriver.common.by import By
 from resources.PersonnelData import Personnel
 from sharedActions.SharedActions import MainPage
@@ -14,7 +15,7 @@ class NewPersonnel(MainPage):
     LAST_NAME = (By.ID, "personnel_Last_Name")
     DISPLAY_NAME = (By.ID, "personnel_Display_Name")
     COMPACT_NAME = (By.ID, "personnel_Compact_Name")
-    SAVE_BUTTON = (By.XPATH, "//input[@class='orange-button right save_changes']")
+    SAVE_BUTTON = (By.XPATH, "//input[@class='orange-button save_changes']")
 
     log = CustomLogger.customLogger()
 
@@ -31,6 +32,7 @@ class NewPersonnel(MainPage):
         self.send_keys(self.COMPACT_NAME, Personnel.CompactName)
         self.click_element(self.SAVE_BUTTON)
 
+        assert self.driver.current_url == Personnel.url
 
         table = self.driver.find_element(By.ID, "personnel_grid")
 
@@ -38,11 +40,13 @@ class NewPersonnel(MainPage):
         for tr in table.find_elements(By.TAG_NAME, 'tr'):
             if displayName in tr.text:
                 row = tr
-                self.log.info("Personnel has been found!")
                 break
 
+        # Assert that the item was added to the table
         try:
             assert row is not None
         except AssertionError as err:
-            self.log.exception(f"Item '{displayName}' not found in table")
+            self.log.exception(f"Personnel '{displayName}' was not found!")
             raise err
+        else:
+            self.log.info(f"Personnel '{displayName}' has been found!")

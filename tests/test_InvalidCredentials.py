@@ -1,6 +1,8 @@
+import pytest
 from pageObjects.LoginPage import LogIn
 
 
+@pytest.mark.login
 class TestInvalidCredentials:
 
     def test_InvalidPassword(self):

@@ -33,18 +33,21 @@ class NewDepartment(MainPage):
         self.click_element(self.ADD_TEMPLATE)
         self.click_element(self.SAVE_BUTTON)
 
+        assert self.driver.current_url == Department.url
+
         table = self.driver.find_element(By.XPATH, "//table[@id='departments']")
 
         row = None
         for tr in table.find_elements(By.TAG_NAME, 'tr'):
             if new_department in tr.text:
                 row = tr
-                self.log.info("Department has been found!")
                 break
 
         # Assert that the item was added to the table
         try:
             assert row is not None
         except AssertionError as err:
-            self.log.exception(f"'{new_department}' was not added!")
+            self.log.exception(f"Department '{new_department}' was not found!")
             raise err
+        else:
+            self.log.info(f"Department '{new_department}' has been found!")

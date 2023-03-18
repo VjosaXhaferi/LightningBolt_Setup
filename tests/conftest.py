@@ -51,11 +51,14 @@ def pytest_runtest_makereport(item, call):
             # only add additional html on failure
             report_directory = os.path.dirname(item.config.option.htmlpath)
             file_name = str(int(round(time.time() * 1000))) + ".png"
-            # file_name = report.nodeid.replace("::", "_") + ".png"
-            destinationFile = os.path.join(report_directory, file_name)
-            driver.save_screenshot(destinationFile)
-            extra.append(pytest_html.extras.image(file_name, ''))
-        report.extra = extra
+            destination_file = os.path.join(report_directory, file_name)
+            # Take the actual screenshot
+            driver.save_screenshot(destination_file)
+            if file_name:
+                html = '<div><img src="%s" alt="screenshot" style="width:300px;height=200px"' \
+                       'onclick="window.open(this.src)" align="right"/></div>' % file_name
+                extra.append(pytest_html.extras.html(html))
+                report.extra = extra
 
 
 def pytest_html_report_title(report):

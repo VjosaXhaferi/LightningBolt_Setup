@@ -1,3 +1,4 @@
+import pytest
 from selenium.webdriver.common.by import By
 from resources.LoginData import LoginData, InvalidPassword, InvalidUsername, InvalidUsernameNPassword
 from utilities.CustomLogger import CustomLogger
