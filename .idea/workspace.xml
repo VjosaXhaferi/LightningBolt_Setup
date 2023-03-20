@@ -3,14 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="adce2966-d9d8-40e0-a4d5-c9a09735feb7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pageObjects/DepartmentPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pageObjects/DepartmentPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pageObjects/PersonnelPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pageObjects/PersonnelPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/1678886432293.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/1678886461597.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/newreport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/PersonnelData.py" beforeDir="false" afterPath="$PROJECT_DIR$/resources/PersonnelData.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_AddDepartment.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_AddDepartment.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utilities/logs/mylog.log" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/logs/mylog.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +35,11 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/vjosaxhaferi/PycharmProjects/LightningBolt_Setup/resources&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;HTML&quot;
+    ]
   }
 }</component>
   <component name="RecentsManager">
@@ -54,7 +51,7 @@
       <recent name="$PROJECT_DIR$/tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_AddPersonnel.TestAddPersonnel">
+  <component name="RunManager" selected="Python tests.Python tests for test_ScheduleManager.TestAddPersonnel">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="LightningBolt_Setup" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -104,7 +101,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_InvalidCredentials.TestInvalidCredentials" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_ScheduleManager.TestAddPersonnel" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="LightningBolt_Setup" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -114,7 +111,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_InvalidCredentials.TestInvalidCredentials&quot;" />
+      <option name="_new_target" value="&quot;test_ScheduleManager.TestAddPersonnel&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -148,19 +145,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.main" />
+      <item itemvalue="Python tests.Python tests for test_ScheduleManager.TestAddPersonnel" />
       <item itemvalue="Python tests.Python tests in test_AddDepartment.py" />
       <item itemvalue="Python tests.Python tests in tests" />
-      <item itemvalue="Python tests.Python tests for test_InvalidCredentials.TestInvalidCredentials" />
       <item itemvalue="Python tests.Python tests for test_AddDepartment.TestAddDepartment" />
       <item itemvalue="Python tests.Python tests for test_AddPersonnel.TestAddPersonnel" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_ScheduleManager.TestAddPersonnel" />
         <item itemvalue="Python tests.Python tests for test_AddPersonnel.TestAddPersonnel" />
         <item itemvalue="Python tests.Python tests for test_AddDepartment.TestAddDepartment" />
         <item itemvalue="Python tests.Python tests in test_AddDepartment.py" />
         <item itemvalue="Python tests.Python tests in tests" />
-        <item itemvalue="Python tests.Python tests for test_InvalidCredentials.TestInvalidCredentials" />
       </list>
     </recent_temporary>
   </component>
