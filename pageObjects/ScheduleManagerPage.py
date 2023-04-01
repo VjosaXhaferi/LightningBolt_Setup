@@ -21,7 +21,7 @@ class ScheduleManager(MainPage):
     CREATE_SAVE_BUTTON = (By.XPATH, "//a[normalize-space()='Create and Save']")
     AUTO_GENERATE = (By.XPATH, "//a[normalize-space()='Auto-Generate']")
     OK_BUTTON = (By.XPATH, "//a[normalize-space()='Ok']")
-    RADIO_BUTTON = (By.XPATH, "//body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/span[1]")
+    RADIO_BUTTON = (By.XPATH, "//body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]")
 
     log = CustomLogger.customLogger()
 
@@ -60,7 +60,7 @@ class ScheduleManager(MainPage):
 
         self.click_element(self.CREATE_SAVE_BUTTON)
         self.click_element(self.OK_BUTTON)
-        time.sleep(7)
+        time.sleep(10)
 
         schedule_table = self.driver.find_element(By.ID, "tablesorter")
 
@@ -70,11 +70,12 @@ class ScheduleManager(MainPage):
                 tds[5].find_element(By.TAG_NAME, "a").click()
                 break
 
+        time.sleep(5)
+
         self.click_element(self.RADIO_BUTTON)
         self.click_element(self.OK_BUTTON)
 
-        time.sleep(3)
-
+        time.sleep(10)
         try:
             assert tds[5].text == "Published to Everyone"
         except AssertionError as err:
@@ -125,8 +126,6 @@ class ScheduleManager(MainPage):
             if schedule_name in tr.text:
                 tds = tr.find_elements(By.TAG_NAME, "td")
                 break
-
-        time.sleep(10)
 
         try:
             assert tds[5].text == "Generation Complete"

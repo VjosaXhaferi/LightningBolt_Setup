@@ -8,22 +8,20 @@ from webdriver_manager.chrome import ChromeDriverManager
 from resources.LoginData import LoginData
 
 
-# @pytest.fixture(scope="class")  # scope="class, it executes before the class where we are calling the fixture
-# def setup():  # request is an instance by default for fixtures
-#    service_obj = Service("/Users/vjosaxhaferi/Downloads/chromedriver_mac64/chromedriver.exe")
-#    driver = webdriver.Chrome(service=service_obj)
-#    driver.get("https://s2.usw2.qa.lightning-bolt.com/")
-#    driver.maximize_window()
-#    return driver
+def pytest_addoption(parser):
+    parser.addoption(
+        "--browser", action="store", default="Chrome")
+
 
 @pytest.fixture(autouse=True)
 def browser(request):
+    browser_name = request.config.getoption("browser")
     global driver
-    if LoginData.browser == "Chrome":
+    if browser_name == "Chrome":
         chrome_options = webdriver.ChromeOptions()
         chrome_options.headless = LoginData.HEADLESS_BROWSER
         driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
-    elif LoginData.browser == "Firefox":
+    elif browser_name == "Firefox":
         firefox_options = webdriver.FirefoxOptions()
         firefox_options.headless = LoginData.HEADLESS_BROWSER
         driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()), options=firefox_options)
@@ -35,6 +33,23 @@ def browser(request):
     request.cls.driver = driver
     yield
     driver.quit()
+
+
+@pytest.fixture(scope='session', autouse=True)
+def setup(request):
+    # Remove the previous report
+    report_path = request.config.option.htmlpath
+    if os.path.exists(report_path):
+        os.remove(report_path)
+
+    # Remove all files and directories in the folder
+    folder_path = "./reports"
+    for filename in os.listdir(folder_path):
+        file_path = os.path.join(folder_path, filename)
+        if os.path.isdir(file_path):
+            os.rmdir(file_path)
+        else:
+            os.remove(file_path)
 
 
 @pytest.hookimpl(hookwrapper=True)

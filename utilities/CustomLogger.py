@@ -9,7 +9,7 @@ class CustomLogger:
         logger = logging.getLogger(logger_name)
         logger.setLevel(logLevel)
 
-        # create console handler
+        # create file handler
         log_file = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'utilities', 'logs', 'mylog.log'))
         logs_dir = os.path.dirname(log_file)
         if not os.path.exists(logs_dir):
@@ -22,6 +22,6 @@ class CustomLogger:
         # add formatter to file handler
         fileHandler.setFormatter(formatter)
 
-        # add console handler to logger
+        # add file handler to logger
         logger.addHandler(fileHandler)
         return logger

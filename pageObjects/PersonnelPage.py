@@ -1,4 +1,3 @@
-import pytest
 from selenium.webdriver.common.by import By
 from resources.PersonnelData import Personnel
 from sharedActions.SharedActions import MainPage
