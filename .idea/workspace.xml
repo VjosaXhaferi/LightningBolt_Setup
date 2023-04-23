@@ -3,14 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="adce2966-d9d8-40e0-a4d5-c9a09735feb7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pageObjects/PersonnelPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pageObjects/PersonnelPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pageObjects/LoginPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pageObjects/LoginPage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pageObjects/ScheduleManagerPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pageObjects/ScheduleManagerPage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/newreport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/DepartmentData.py" beforeDir="false" afterPath="$PROJECT_DIR$/resources/DepartmentData.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sharedActions/SharedActions.py" beforeDir="false" afterPath="$PROJECT_DIR$/sharedActions/SharedActions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_AddDepartment.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_AddDepartment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_AddPersonnel.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_AddPersonnel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_InvalidCredentials.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_InvalidCredentials.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_ScheduleManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_ScheduleManager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/CustomLogger.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/CustomLogger.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utilities/logs/mylog.log" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/logs/mylog.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +60,28 @@
       <recent name="$PROJECT_DIR$/tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.conftest">
+  <component name="RunManager" selected="Python tests.Python tests for test_ScheduleManager.TestScheduleManager.test_AddNewSchedule">
+    <configuration name="ScheduleManagerPage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LightningBolt_Setup" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pageObjects" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pageObjects/ScheduleManagerPage.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="conftest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LightningBolt_Setup" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -102,34 +124,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_AddDepartment.TestAddDepartment" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="LightningBolt_Setup" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_AddDepartment.TestAddDepartment&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_AddPersonnel.TestAddPersonnel" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="LightningBolt_Setup" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_AddPersonnel.TestAddPersonnel&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="Python tests for test_ScheduleManager.TestAddPersonnel" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="LightningBolt_Setup" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -141,6 +135,20 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_ScheduleManager.TestAddPersonnel&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_ScheduleManager.TestScheduleManager.test_AddNewSchedule" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="LightningBolt_Setup" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_ScheduleManager.TestScheduleManager.test_AddNewSchedule&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -160,19 +168,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.main" />
+      <item itemvalue="Python.ScheduleManagerPage" />
       <item itemvalue="Python.conftest" />
-      <item itemvalue="Python tests.Python tests for test_AddDepartment.TestAddDepartment" />
-      <item itemvalue="Python tests.Python tests for test_AddPersonnel.TestAddPersonnel" />
       <item itemvalue="Python tests.Python tests for test_ScheduleManager.TestAddPersonnel" />
+      <item itemvalue="Python tests.Python tests for test_ScheduleManager.TestScheduleManager.test_AddNewSchedule" />
       <item itemvalue="Python tests.Python tests for test_ScheduleManager.TestScheduleManager.test_AutoGeneratedSchedule" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_ScheduleManager.TestScheduleManager.test_AddNewSchedule" />
+        <item itemvalue="Python.ScheduleManagerPage" />
         <item itemvalue="Python.conftest" />
         <item itemvalue="Python tests.Python tests for test_ScheduleManager.TestScheduleManager.test_AutoGeneratedSchedule" />
         <item itemvalue="Python tests.Python tests for test_ScheduleManager.TestAddPersonnel" />
-        <item itemvalue="Python tests.Python tests for test_AddPersonnel.TestAddPersonnel" />
-        <item itemvalue="Python tests.Python tests for test_AddDepartment.TestAddDepartment" />
       </list>
     </recent_temporary>
   </component>

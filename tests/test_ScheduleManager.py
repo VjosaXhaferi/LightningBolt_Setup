@@ -3,6 +3,7 @@ from pageObjects.ScheduleManagerPage import ScheduleManager
 from pageObjects.LoginPage import LogIn
 
 
+@pytest.mark.e2e
 class TestScheduleManager:
 
     @pytest.mark.manual

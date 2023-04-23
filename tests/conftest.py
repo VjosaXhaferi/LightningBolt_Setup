@@ -36,12 +36,7 @@ def browser(request):
 
 
 @pytest.fixture(scope='session', autouse=True)
-def setup(request):
-    # Remove the previous report
-    report_path = request.config.option.htmlpath
-    if os.path.exists(report_path):
-        os.remove(report_path)
-
+def setup():
     # Remove all files and directories in the folder
     folder_path = "./reports"
     for filename in os.listdir(folder_path):
